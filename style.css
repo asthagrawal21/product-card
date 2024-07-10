@@ -1,0 +1,233 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins" ,sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+.logo{
+    width: 8rem;
+    margin-bottom: 2rem;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to right, #fff047, #fe42d9);
+    display: grid;
+    place-items: center;
+}
+.card-wrapper{
+    width: 50rem;
+    height: 60rem;
+    padding: 0 10rem;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+}
+.card{
+    width: 30rem;
+    height: 55rem;
+    background: #eee;
+    border-radius: 2.5rem;
+    box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.7);
+    position: relative;
+}
+.card-top{
+    width: 100%;
+    height: 50%;
+    background:  #cd4ab3;
+    padding: 3rem;
+    border-radius: 2.5rem 2.5rem 0 0;
+    transition: background 1s;
+}
+.card-top-text{
+    color: white;
+}
+.card-top-text h1{
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+}
+.card-bottom{
+    width: 100%;
+    height: 50%;
+    padding: 2rem 3rem;
+}
+.card-bottom h1{
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 0.5rem;
+    color: black;
+}
+.card-bottom h3{
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+}
+.badge{
+    position: absolute;
+    top: 30rem;
+    right: 5rem;
+    width: 3.5rem;
+    height: 1.6rem;
+    background: #25d390;
+    color: #fff;
+    display: grid;
+    place-items: center;
+    border-radius: 0.3rem;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+    text-transform: uppercase;
+}
+.stars{
+    margin-bottom: 3rem;
+    color: rgb(248, 190, 41);
+}
+.stars i:last-child{
+    opacity: 0.4;
+}
+.size{
+    margin-bottom: 3rem;
+}
+.size h4{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1.3rem;
+}
+.sizes{
+    display: flex;
+}
+.sizes span{
+    font-size: 1.3rem;
+    margin-right: 2.5rem;
+}
+.sizes span:nth-child(3){
+    width: 2rem;
+    height: 2rem;
+    background: #25d390;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: #fff;
+}
+.color h4{
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    margin-bottom: 1rem;
+}
+.color-1, .color-2, .color-3, .color-4, .color-5, .color-6{
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.colors{
+    display: flex;
+}
+.color-1{
+    background: linear-gradient(to right, #FECC68, #FB6BDE);
+    margin-right: 1.5rem;
+    box-shadow: 0 1rem 2rem rgba(28, 71, 122, 0.2);
+}
+.color-2{
+    background: linear-gradient(to right, #a89061, #2b00ff);
+    margin-right: 1.5rem;
+    box-shadow: 0 1rem 2rem rgba(32, 98, 178, 0.2);
+}
+.color-3{
+    background: linear-gradient(to right, #a200ff, #0062ff);
+    margin-right: 1.5rem;
+    box-shadow: 0 1rem 2rem rgba(32, 98, 178, 0.2);
+}
+/* .color-4{
+    background: linear-gradient(to right, #a89061, #2b00ff);
+    margin-right: 1.5rem;
+    box-shadow: 0 1rem 2rem rgba(32, 98, 178, 0.2);
+}
+.color-5{
+    background: linear-gradient(to right, #a89061, #2b00ff);
+    margin-right: 1.5rem;
+    box-shadow: 0 1rem 2rem rgba(32, 98, 178, 0.2);
+}
+.color-6{
+    background: linear-gradient(to right, #a89061, #2b00ff);
+    margin-right: 1.5rem;
+    box-shadow: 0 1rem 2rem rgba(32, 98, 178, 0.2);
+} */
+.price{
+    width: 16rem;
+    height: 3rem;
+    background: #00eeff;
+    color: #ffff;
+    border-radius: 0.5rem;
+    position: absolute;
+    right: -4rem;
+    bottom: 6rem;
+    box-shadow: 0 1rem 2rem rgba(28, 71, 122, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background 0.5s;
+}
+.price span{
+    font-size: 2rem;
+}
+.price span:first-child{
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-right: 1rem;
+}
+.price span:last-child{
+    font-weight: bold;
+}
+/* new class bnari hu jo uss element pe apply hogi jiski class class-top h or ese element me h jiski class container or alter h*/
+.container.alter .card-top{
+    background: rgb(69, 106, 254);
+}
+.container.alter .price{
+    background: #1891e8;
+}
+.container.alter{
+    background-image: linear-gradient(to right, rgb(170, 168, 167), #2b00ff);
+}
+/* shoe-1 */
+.orange-pink-shoe{
+    width: 30rem;
+    position: absolute;
+    top: -0.5rem;
+    right: -9rem;
+    transition: transform 1s;
+}
+/* shoe-2 */
+.cream-shoe{
+    width: 33rem;
+    position: absolute;
+    top: -10rem;
+    right: -45rem;
+    transition: transform 1s;
+}
+/* shoe-3 */
+.black-shoe{
+    width: 35rem;
+    position: absolute;
+    top: -3rem;
+    right: -10rem;
+    transition: transform 1s;
+}
+.container.alter .orange-pink-shoe{
+    transform: translateX(-50rem) rotateZ(50deg);
+}
+.container.alter .cream-shoe{
+    transform: translateX(-40rem) rotateZ(-45deg);
+}
+.container.alter .black-shoe{
+    transform: translateX(-40rem) rotateZ(-55deg);
+}
